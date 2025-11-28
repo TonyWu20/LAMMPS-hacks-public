@@ -103,6 +103,7 @@ FixEChemDID::FixEChemDID(LAMMPS *lmp, int narg, char **arg) :
 
   vector_flag = 1;
   size_vector = 2;
+  extvector=0;
   eflag = 0;
   js[0] = js[1] = 0.0;
 }
