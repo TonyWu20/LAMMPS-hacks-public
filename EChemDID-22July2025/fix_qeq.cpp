@@ -789,7 +789,7 @@ void FixQEq::read_file(char *file)
       int nlo,nhi;
       double val;
 
-      FILE *fp = utils::open_potential(file,lmp,nullptr);
+      fp = utils::open_potential(file,lmp,nullptr);
       if (fp == nullptr)
         throw qeq_parser_error(fmt::format("Cannot open fix qeq parameter file {}: {}",
                                            file,utils::getsyserror()));
