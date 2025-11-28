@@ -16,12 +16,6 @@
 
 #include "fix.h"
 
-#define EV_TO_KCAL_PER_MOL 14.4
-#define DANGER_ZONE 0.90
-#define MIN_CAP 50
-#define SAFE_ZONE 1.2
-#define MIN_NBRS 100
-
 namespace LAMMPS_NS {
 
 class FixQEq : public Fix {
@@ -96,10 +90,6 @@ class FixQEq : public Fix {
   double *Hdia_inv;
   double *b_s, *b_t;
   double *p, *q, *r, *d;
-
-  // streitz-mintmire
-
-  double alpha;
 
   // damped dynamics
 
