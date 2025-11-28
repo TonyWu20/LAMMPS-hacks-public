@@ -783,6 +783,7 @@ void FixQEq::read_file(char *file)
       setflag[n] = 0;
       chi[n] = eta[n] = gamma[n] = zeta[n] = zcore[n] = qmin[n] = qmax[n] = omega[n] = 0.0;
     }
+    FILE *fp = nullptr;
 
     try {
       int nlo,nhi;
