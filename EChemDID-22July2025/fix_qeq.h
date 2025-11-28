@@ -30,6 +30,7 @@ class FixQEq : public Fix {
   void min_pre_force(int) override;
 
   double compute_scalar() override;
+  static constexpr double DANGER_ZONE = 0.90;
 
   // derived child classes must provide these functions
 
